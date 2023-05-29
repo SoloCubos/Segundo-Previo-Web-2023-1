@@ -1,6 +1,7 @@
 package com.segundo.previo.web.entities;
 
 import java.sql.Date;
+import java.sql.Timestamp;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -16,7 +17,8 @@ public class Partido {
 	@Id
 	private int id;
 	
-	private Date fecha;
+	private Timestamp fecha;
+	
 	
 	private Estadio estadio_id;
 }
