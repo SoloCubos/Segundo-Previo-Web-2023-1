@@ -1,6 +1,5 @@
 package com.segundo.previo.web.entities;
 
-import java.sql.Date;
 import java.sql.Timestamp;
 
 import jakarta.persistence.Entity;

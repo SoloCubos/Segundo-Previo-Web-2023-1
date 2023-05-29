@@ -52,7 +52,13 @@ public class SeleccionController {
 		return "eliminar seleccion: ";
 	}
 	
-	
+	@GetMapping()
+	public String cargarGrupo(Model model) {
+		
+		
+		
+		return "grupos";
+	}
 	
 	
 }
