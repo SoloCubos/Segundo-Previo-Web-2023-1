@@ -5,6 +5,25 @@
 <title>Resultados</title>
 </head>
 <body>
-
+	<thead>
+		<tr>
+		<td>Id</td>
+		<td>Id Partido</td>
+		<td>Id Seleccion</td>
+		<td>Goles</td>
+		<td>T. Amarillas</td>
+		<td>T. Rojas</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr th:each="resultado: ${resultados}">
+			<td th:text="${resultado.id}"></td>
+			<td th:text="${resultado.partido_id}"></td>
+			<td th:text="${resultado.seleccion_id}"></td>
+			<td th:text="${resultado.goles}"></td>
+			<td th:text="${resultado.amarillas}"></td>
+			<td th:text="${resultado.rojas}"></td>
+		</tr>
+	</tbody>
 </body>
 </html>
