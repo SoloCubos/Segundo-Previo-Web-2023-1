@@ -34,6 +34,8 @@ public class SeleccionController {
 	@PostMapping("/")
 	public String registrarSeleccion(@RequestBody Seleccion seleccion) {
 		
+		seleccionRepo.save(seleccion);
+		
 		return "registar seleccion";
 	}
 	
