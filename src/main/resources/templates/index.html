@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Listar Selecciones</title>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+			<td>Id</td>
+			<td>Nombre</td>
+			<td>Id Continente</td>
+			<td>Grupo</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="seleccion: ${selecciones}">
+				<td th:text="${Seleccion.id}"></td>
+				<td th:text="${seleccion.nombre}"></td>
+				<td th:text="${seleccion.continente_id}"></td>
+				<td th:text="${seleccion.grupo}"></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
